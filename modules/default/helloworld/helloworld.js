@@ -18,20 +18,20 @@ Module.register("helloworld", {
   ],
   index: 0,
 
-  // 
+  //
   start: function() {
     var self = this;
-	setInterval(function() {
-		self.updateDom(); // no speed defined, so it updates instantly.
-	  }, 5000); //perform every 1000 milliseconds.
+    setInterval(function() {
+      self.updateDom(); // no speed defined, so it updates instantly.
+    }, 5000); //perform every 5000 milliseconds.
   },
 
   // Displaying skill in the mirror
   getDom: function() {
-    Log.log("Updating Hello World"); 
+    Log.log("Updating Hello World");
     var wrapper = document.createElement("div");
-	wrapper.innerHTML = this.skills[this.index];
-	this.index = this.index + 1;
+    wrapper.innerHTML = this.skills[this.index];
+    this.index = (this.index + 1) % 6;
     return wrapper;
   }
   /*getTemplate: function () {
