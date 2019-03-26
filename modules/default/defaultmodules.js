@@ -13,7 +13,6 @@ var defaultModules = [
 	"clock",
 	"compliments",
 	"currentweather",
-	"helloworld",
 	"newsfeed",
 	"weatherforecast",
 	"updatenotification",
