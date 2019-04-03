@@ -68,6 +68,7 @@ Temporary Items
 !/modules/default
 !/modules/default/**
 !/modules/README.md**
+!/modules/skills
 !/modules/skills/**
 
 # Ignore changes to the custom css files.
